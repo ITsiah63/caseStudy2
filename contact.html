@@ -1,0 +1,76 @@
+<!--Isiah Reyes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lilac Livings - Contact</title>
+	<meta charset="utf-8">
+	<link href="styles/casita.css" rel="stylesheet">
+</head>
+<body>
+	<!--Start a div wrapper-->
+	<div id="wrapper">
+	<!--header element-->
+	<header>
+		<h1>Lilac Livings</h1>
+	</header>
+	<!--navigation-->
+	<nav>
+		<ul> 
+			<li><a href="images/contact.png"><img src="images/contact.png"
+			class="floatleft" alt="Contact Photo" width="160" height="160"></a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="rooms/bloom.html">The Bloom Room</a></li>
+			<li><a href="rooms/purple.html">Purple Quarters</a></li>
+			<li><a href="rooms/master.html">Master</a></li>
+			<li><a href="events/weekend.html">Weekend Events</a><li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!--main content section-->
+	<main>
+		<!--Form for Reservation-->
+		
+		<form>
+			<label for="myName">Name: </label>
+			<input type="text" id="myName" name="myName" required>
+		</form>
+			<p>Guests:</p>
+		
+		<form method="post" action="https://webdevbasics.net/scripts/lilaclivings.php">
+			<input type="radio" id="2" name="twoGuests" value="2">
+			<label for="2">2</label>
+			
+			
+			<input type="radio" id="3" name="threeGuests" value="3">
+			<label for="3">3</label>
+			
+			
+			<input type="radio" id="4" name="fourGuests" value="4">
+			<label for="4">4</label>
+			
+			
+			<input type="radio" id="5+" name="moreGuests" value="5+">
+			<label for="5+">5+</label>
+			
+			<label for="myDay">Check In Day:</label>
+			<input type="date" id="myDay" name="myDay" required>
+			
+			<div class = "dropdown"> <!-- the class that calls the dropdown box-->
+				<span><input type="submit" value="Schedule Stay!"></span> <!--the submit button of the form involved in the dropdown box-->
+				<div class ="dropdown-content">
+				<p>Make sure all information is filled out</p>
+				</div>
+			</div>
+			
+		</form>
+		
+		
+	</main>
+	<!--footer section-->
+	<footer>
+		Copyright &copy; 2024 Lilac Livings<br>
+		<a href="mailto:i0576631@amarillocollege.com">Isiah Reyes</a>
+	</footer>
+	</div>
+</body>
+</html>
